@@ -1,6 +1,6 @@
 main {
     background-color: #fff; /* Imposta lo sfondo bianco */
-    padding: 20px 120px; /* Padding laterale di 120px, sopra e sotto di 20px */
+    padding: 20px 60px; /* Padding laterale di 60px, sopra e sotto di 20px */
     margin: 0 auto; /* Centra orizzontalmente il contenuto se la larghezza è fissa */
     box-sizing: border-box; /* Garantisce che il padding sia incluso nella larghezza totale */
 }
