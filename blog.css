@@ -1,3 +1,53 @@
+main {
+    background-color: #fff; /* Imposta lo sfondo bianco */
+    padding: 20px 120px; /* Padding laterale di 120px, sopra e sotto di 20px */
+    margin: 0 auto; /* Centra orizzontalmente il contenuto se la larghezza è fissa */
+    box-sizing: border-box; /* Garantisce che il padding sia incluso nella larghezza totale */
+}
+
+	h1, h2, h3, p {
+    text-align: center;
+    margin: 10px 0;
+    line-height: 1.6;
+    font-family: 'Playfair Display', serif; /* Applica il font a questi elementi */
+}
+
+
+.blog-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 10px;
+  padding: 20px;
+}
+
+.sidebar {
+  background: #fff;
+  padding: 10px;
+  border: 1px solid #fff;
+}
+
+.main-content article {
+  margin-bottom: 20px;
+}
+
+.main-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.tags a {
+  display: inline-block;
+  margin: 5px 0;
+  text-decoration: none;
+  color: #007BFF;
+}
+
+.tags a:hover {
+  text-decoration: underline;
+}
+
+/*FISSI*/
 body {
     margin: 0; /* Elimina i margini */
     background-color: #fff; 
@@ -100,64 +150,6 @@ footer p {
     height: 30px; /* Dimensione icone social */
     margin: 0 5px; /* Margine laterale tra le icone */
 }
-
-
-main {
-    background-color: #fff; /* Imposta lo sfondo bianco */
-    padding: 20px 120px; /* Padding laterale di 120px, sopra e sotto di 20px */
-    margin: 0 auto; /* Centra orizzontalmente il contenuto se la larghezza è fissa */
-    box-sizing: border-box; /* Garantisce che il padding sia incluso nella larghezza totale */
-}
-
-	h1, h2, h3, p {
-    text-align: center;
-    margin: 10px 0;
-    line-height: 1.6;
-    font-family: 'Playfair Display', serif; /* Applica il font a questi elementi */
-}
-
-
-.blog-container {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  gap: 20px;
-  padding: 20px;
-}
-
-.sidebar {
-  background: #fff;
-  padding: 10px;
-  border: 1px solid #fff;
-}
-
-.main-content article {
-  margin-bottom: 20px;
-}
-
-.main-content img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
-
-.tags a {
-  display: inline-block;
-  margin: 5px 0;
-  text-decoration: none;
-  color: #007BFF;
-}
-
-.tags a:hover {
-  text-decoration: underline;
-}
-
-#searchBar {
-  width: 100%;
-  padding: 8px;
-  margin-top: 10px;
-}
-
-
 
 /* Stili per dispositivi mobili */
 @media (max-width: 768px) {
