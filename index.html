@@ -92,5 +92,46 @@
         <p>&copy; 2024 Nemosia. Tutti i diritti riservati.</p>
     </footer>
 
+<!-- JAVASCRIPT -->
+document.addEventListener('DOMContentLoaded', () => {
+  // Otteniamo tutti i link dei tag
+  const filterTags = document.querySelectorAll('.filter-tag');
+  
+  // Otteniamo tutti gli articoli
+  const articles = document.querySelectorAll('article');
+  
+  // Aggiungiamo l'evento di clic per ogni tag
+  filterTags.forEach(tag => {
+    tag.addEventListener('click', (event) => {
+      event.preventDefault();  // Impediamo il comportamento di default del link (non vogliamo che la pagina venga ricaricata)
+      
+      // Otteniamo il tag da mostrare
+      const tagName = tag.getAttribute('href').split('=')[1];  // Otteniamo il valore del tag dalla URL
+
+      // Nascondiamo tutti gli articoli
+      articles.forEach(article => {
+        // Troviamo tutti i tag nell'articolo
+        const articleTags = article.querySelectorAll('.meta-details .tag');
+        
+        // Controlliamo se l'articolo ha il tag selezionato
+        let hasTag = false;
+        articleTags.forEach(articleTag => {
+          if (articleTag.getAttribute('href').includes(tagName)) {
+            hasTag = true;
+          }
+        });
+
+        // Mostriamo o nascondiamo l'articolo in base al tag
+        if (hasTag || tagName === '') {
+          article.style.display = 'block';  // Mostriamo l'articolo
+        } else {
+          article.style.display = 'none';  // Nascondiamo l'articolo
+        }
+      });
+    });
+  });
+});
+
+    
 </body>
 </html>
