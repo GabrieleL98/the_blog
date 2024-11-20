@@ -36,6 +36,26 @@ main {
   border-radius: 5px;
 }
 
+/* Per il titolo degli articoli */
+.article-title {
+  font-family: "Abril Fatface", serif; /* Applica il font */
+  font-weight: 400; /* Imposta il peso normale */
+  font-style: normal; /* Nessuna inclinazione */
+  text-decoration: none; /* Rimuove la sottolineatura */
+}
+
+/* Rimuove la sottolineatura specificamente dai link all'interno dell'h2 */
+.article-title a {
+  text-decoration: none; /* Rimuove la sottolineatura dal link */
+  color: inherit; /* Mantiene il colore del titolo */
+}
+
+/* Per giustificare il testo */
+.justify-text {
+  text-align: justify;
+}
+
+
 .tags a {
   display: inline-block;
   margin: 5px 0;
