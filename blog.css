@@ -5,7 +5,7 @@ main {
     box-sizing: border-box; /* Garantisce che il padding sia incluso nella larghezza totale */
 }
 
-	h1, h2, h3, p {
+	h1, h2, p {
     text-align: center;
     margin: 10px 0;
     line-height: 1.6;
@@ -24,6 +24,17 @@ main {
   background: #fff;
   padding: 10px;
   border: 1px solid #F8EBD9;
+}
+
+/* Per il titolo degli articoli */
+h3 {
+  text-align: center;
+  margin: 10px 0;
+  line-height: 1.6;
+  font-family: "Abril Fatface", serif; /* Applica il font */
+  font-weight: 200; /* Imposta il peso normale */
+  font-style: normal; /* Nessuna inclinazione */
+  text-decoration: none; /* Rimuove la sottolineatura */
 }
 
 .main-content article {
