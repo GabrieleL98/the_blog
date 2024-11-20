@@ -117,6 +117,48 @@ main {
 }
 
 
+.blog-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.sidebar {
+  background: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.main-content article {
+  margin-bottom: 20px;
+}
+
+.main-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.tags a {
+  display: inline-block;
+  margin: 5px 0;
+  text-decoration: none;
+  color: #007BFF;
+}
+
+.tags a:hover {
+  text-decoration: underline;
+}
+
+#searchBar {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+}
+
+
+
 /* Stili per dispositivi mobili */
 @media (max-width: 768px) {
     body {
