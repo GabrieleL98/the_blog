@@ -120,22 +120,26 @@ h3 {
 }
 
 /* Sidebar: filtro per tag */
-.sidebar right .tag-filter {
+.sidebar.right .tag-filter {
   margin-top: 20px;
 }
 
-.sidebar right .filter-tag {
-  display: block; /* Pulsanti separati */
+.sidebar.right .filter-tag {
+  display: inline-block; /* I tag sono box separati */
   margin: 5px 0;
-  padding: 5px 10px;
+  padding: 8px 15px; /* Spazi interni per un look più definito */
   text-decoration: none;
-  color: #fff;
-  background-color: #007BFF; /* Colore pulsanti */
-  border-radius: 3px; /* Angoli arrotondati */
+  color: #fff; /* Testo bianco */
+  background-color: #EFD8C3; /* Sfondo richiesto */
+  border-radius: 5px; /* Angoli arrotondati */
+  font-size: 14px; /* Testo un po' più piccolo */
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s ease; /* Animazione di transizione */
 }
 
-.sidebar right .filter-tag:hover {
-  background-color: #0056b3; /* Colore hover */
+.sidebar.right .filter-tag:hover {
+  background-color: #D8BFA9; /* Sfondo più scuro al passaggio del mouse */
 }
 
 
