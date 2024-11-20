@@ -55,17 +55,78 @@ main {
   text-align: justify;
 }
 
+/* Meta-info: data, autore e tag */
+.meta-info {
+  text-align: center;
+  font-size: 0.9em; /* Più piccolo della descrizione */
+  color: #555; /* Colore testo più tenue */
+  margin-top: 20px;
+}
 
-.tags a {
-  display: inline-block;
+.meta-divider {
+  border-top: 1px solid #ccc; /* Righe sottili */
+  margin: 10px 0;
+}
+
+.meta-details {
   margin: 5px 0;
-  text-decoration: none;
-  color: #007BFF;
 }
 
-.tags a:hover {
-  text-decoration: underline;
+.meta-details .tag {
+  text-decoration: none;
+  color: #007BFF; /* Colore link tag */
 }
+
+.meta-details .tag:hover {
+  text-decoration: underline; /* Effetto al passaggio */
+}
+
+
+/* Meta-info: data, autore e tag */
+.meta-info {
+  text-align: center;
+  font-size: 0.9em; /* Più piccolo della descrizione */
+  color: #555; /* Colore testo più tenue */
+  margin-top: 20px;
+}
+
+.meta-divider {
+  border-top: 1px solid #ccc; /* Righe sottili */
+  margin: 10px 0;
+}
+
+.meta-details {
+  margin: 5px 0;
+}
+
+.meta-details .tag {
+  text-decoration: none;
+  color: #007BFF; /* Colore link tag */
+}
+
+.meta-details .tag:hover {
+  text-decoration: underline; /* Effetto al passaggio */
+}
+
+/* Sidebar: filtro per tag */
+.sidebar right .tag-filter {
+  margin-top: 20px;
+}
+
+.sidebar right .filter-tag {
+  display: block; /* Pulsanti separati */
+  margin: 5px 0;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007BFF; /* Colore pulsanti */
+  border-radius: 3px; /* Angoli arrotondati */
+}
+
+.sidebar right .filter-tag:hover {
+  background-color: #0056b3; /* Colore hover */
+}
+
 
 /*FISSI*/
 body {
