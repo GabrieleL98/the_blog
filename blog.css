@@ -153,6 +153,8 @@ h3 {
   border-radius: 5px; /* Angoli arrotondati */
   cursor: pointer; /* Cambia il cursore quando ci si passa sopra */
   text-align: center; /* Centra il testo */
+  margin-left: auto; /* Centra il pulsante orizzontalmente */
+  margin-right: auto; /* Centra il pulsante orizzontalmente */
   text-decoration: none; /* Rimuove la sottolineatura */
   margin-top: 20px; /* Distanza dall'articolo */
 }
