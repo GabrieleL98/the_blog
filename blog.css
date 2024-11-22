@@ -39,7 +39,9 @@ h3 {
 
 .main-content article {
   margin-bottom: 20px;
+  text-align: justify; /* Giustifica il testo */
 }
+
 
 .main-content img {
   width: 100%;
