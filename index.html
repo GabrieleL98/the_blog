@@ -11,6 +11,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+<script src="blog.js" defer></script>
 </head>
 <body>
     <header>
@@ -41,23 +42,9 @@
 
   <!-- Colonna centrale -->
   <main class="main-content">
-    <article>
-      <img src="the_substance_banner.jpg" alt="Anteprima Articolo 1" />
-      <h2 class="article-title"><a href="#">"The Substance" ha voluto strafare?</a></h2>
-      <p class="justify-text">Premiato al festival del cinema di Cannes, il film della regista Coralie Fargeat ha portato sul grande schermo il tema dell'ossessione per la bellezza, che con il suo naturale affievolirsi dovuto al tempo, fa emergere tutte le fragilità della protagonista, arrivata alla resa dei conti con un mondo da cui ha preso tutto, sfruttandone gli stessi marci meccanismi che ora la rigettano.
-      Un film che parla di società alla società, una critica violenta veicolata attraverso l'insuale canale narrativo del gener splatter. Che cos'è "The Substance"? E soprattutto, <i>chi è</i> Elizabeth?</p>
-    </article>
-      <div class="meta-info">
-      <div class="meta-divider"></div>
-      <p class="meta-details">
-        21-11-2024, Gabriele. <b>Tags:</b> 
-        <a href="?tag=cinema" class="tag">#cinema</a> 
-        <a href="?tag=società" class="tag">#società</a> 
-        <a href="?tag=identità" class="tag">#identità</a>
-      </p>
-      <div class="meta-divider"></div>
-    </div>
-  </main>
+  <div id="articles-container"></div>
+</main>
+
 
   <!-- Colonna destra -->
   <aside class="sidebar right">
@@ -90,47 +77,6 @@
         
         <p>&copy; 2024 Nemosia. Tutti i diritti riservati.</p>
     </footer>
-
-<!-- JAVASCRIPT -->
-document.addEventListener('DOMContentLoaded', () => {
-  // Otteniamo tutti i link dei tag
-  const filterTags = document.querySelectorAll('.filter-tag');
-  
-  // Otteniamo tutti gli articoli
-  const articles = document.querySelectorAll('article');
-  
-  // Aggiungiamo l'evento di clic per ogni tag
-  filterTags.forEach(tag => {
-    tag.addEventListener('click', (event) => {
-      event.preventDefault();  // Impediamo il comportamento di default del link (non vogliamo che la pagina venga ricaricata)
-      
-      // Otteniamo il tag da mostrare
-      const tagName = tag.getAttribute('href').split('=')[1];  // Otteniamo il valore del tag dalla URL
-
-      // Nascondiamo tutti gli articoli
-      articles.forEach(article => {
-        // Troviamo tutti i tag nell'articolo
-        const articleTags = article.querySelectorAll('.meta-details .tag');
-        
-        // Controlliamo se l'articolo ha il tag selezionato
-        let hasTag = false;
-        articleTags.forEach(articleTag => {
-          if (articleTag.getAttribute('href').includes(tagName)) {
-            hasTag = true;
-          }
-        });
-
-        // Mostriamo o nascondiamo l'articolo in base al tag
-        if (hasTag || tagName === '') {
-          article.style.display = 'block';  // Mostriamo l'articolo
-        } else {
-          article.style.display = 'none';  // Nascondiamo l'articolo
-        }
-      });
-    });
-  });
-});
-
     
 </body>
 </html>
