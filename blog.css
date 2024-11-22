@@ -145,7 +145,7 @@ h3 {
 }
 
 /* Stile per il pulsante "Torna alla lista" */
-#back-to-list {
+#back-to-list.back_button {
   display: inline-block; /* Imposta il pulsante come blocco in linea */
   padding: 10px 20px; /* Aggiungi un po' di spazio interno per renderlo più grande */
   font-size: 18px; /* Imposta la dimensione del font */
@@ -159,9 +159,10 @@ h3 {
   margin-right: auto; /* Centra il pulsante orizzontalmente */
   text-decoration: none; /* Rimuove la sottolineatura */
   margin-top: 20px; /* Distanza dall'articolo */
+  display: block; /* Impostato su block per forzare il centraggio */
 }
 
-#back-to-list:hover {
+#back-to-list.back_button:hover {
   background-color: #d78c00; /* Colore di sfondo al passaggio del mouse */
 }
 
