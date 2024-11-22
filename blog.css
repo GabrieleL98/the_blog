@@ -142,6 +142,25 @@ h3 {
   background-color: #D8BFA9; /* Sfondo più scuro al passaggio del mouse */
 }
 
+/* Stile per il pulsante "Torna alla lista" */
+#back-to-list {
+  display: inline-block; /* Imposta il pulsante come blocco in linea */
+  padding: 10px 20px; /* Aggiungi un po' di spazio interno per renderlo più grande */
+  font-size: 18px; /* Imposta la dimensione del font */
+  background-color: #f0a500; /* Colore di sfondo (puoi cambiarlo come preferisci) */
+  color: white; /* Colore del testo */
+  border: none; /* Rimuove il bordo */
+  border-radius: 5px; /* Angoli arrotondati */
+  cursor: pointer; /* Cambia il cursore quando ci si passa sopra */
+  text-align: center; /* Centra il testo */
+  text-decoration: none; /* Rimuove la sottolineatura */
+  margin-top: 20px; /* Distanza dall'articolo */
+}
+
+#back-to-list:hover {
+  background-color: #d78c00; /* Colore di sfondo al passaggio del mouse */
+}
+
 
 /*FISSI*/
 body {
