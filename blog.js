@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
               .join(" ")}
             </p>
           </div>
-          <button id="back-to-list">Torna alla lista</button>
+          <button id="back-to-list" class="back_button">Torna alla lista</button>
         </article>
       `;
 
