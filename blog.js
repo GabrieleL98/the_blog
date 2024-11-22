@@ -1,7 +1,8 @@
 <!-- JAVASCRIPT PER JSON FETCH -->
 document.addEventListener("DOMContentLoaded", () => {
   const articleContainer = document.querySelector(".main-content");
-  const jsonDataUrl = "articles.json"; // URL del file JSON
+  const jsonDataUrl = "https://raw.githubusercontent.com/GabrieleL98/the_blog/main/articles.json";
+
 
   // Funzione per caricare articoli dal JSON
   const loadArticles = async () => {
