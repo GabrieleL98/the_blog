@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
       articleContainer.innerHTML = `
         <article>
           <img src="${article.image}" alt="${article.title}" />
-          <h1>${article.title}</h1>
+         <h2 class="article-title">${article.title}</h2>
           <p>${article.content}</p>
           <div class="meta-info">
             <p>${article.date}, ${article.author}. <b>Tags:</b> 
